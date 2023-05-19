@@ -1,0 +1,13 @@
+1- Downlaod 
+  - Download JDK 
+  - Donwload WebLogic Install ( WLS or Infrastructure) 
+
+2- Install JDK rpm and export paths
+ Install JDK 
+  - tar -zxvf jdk-8u211-linux-x64.tar.gz -C /u01/app  
+      -  export JAVA_HOME=/u01/app/jdk
+   set enviornment Variable 
+       -  export PATH=${JAVA_HOME}/bin:$PATH 
+    verify JDK Installation and path 
+     which jdk 
+     
