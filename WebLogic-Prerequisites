@@ -3,20 +3,20 @@
   >> Donwload WebLogic Install ( WLS or Infrastructure) 
 #######################################################
 2- Install JDK rpm and export paths
- Install JDK 
-  >> tar -zxvf jdk-8u211-linux-x64.tar.gz -C /u01/app  
+    Install JDK 
+      >> tar -zxvf jdk-8u211-linux-x64.tar.gz -C /u01/app  
       >  export JAVA_HOME=/u01/app/jdk
    set enviornment Variable 
        >  export PATH=${JAVA_HOME}/bin:$PATH 
     verify JDK Installation and path 
      > which jdk 
-   #################################  
+   #####################################################
  3- create user and group 
       >> useradd webadmin -u 2001
       >> groupadd webadmin -g 2001
      
      Add user into sudo group >> but necessary 
-  ###########################################
+##########################################################
   
   1- Install WebLogic Server 
       >> java -jar fmw_12.2.1.3.0_wls.jar
@@ -59,16 +59,13 @@
 	4- Start Admin Server 
          >>> Start nodemanager1 / nodemanager2 /nodemanager3 ……
 ##########################################################################
-
 Disbale SSL if any issue 
 pwd
 /u02/user_projects/domains/test_domain/nodemanager
 [webadmin@test1 nodemanager]$ vi nodemanager.properties 
-
 SecureListener=false
-#####################################
+#############################################
  now go to Node Manager 
-
 Console > Machine > select nodemanager > 
 #############################################
  pwd
